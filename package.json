@@ -7,7 +7,8 @@
     "build": "ng build hcoco --prod",
     "publish-lib": "cd dist/hcoco && npm publish --registry https://registry.npmjs.org/",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
