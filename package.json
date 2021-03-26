@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build hcoco --prod",
+    "publish-lib": "cd dist/hcoco && npm publish --registry https://registry.npmjs.org/",
     "test": "ng test",
     "lint": "ng lint"
   },
