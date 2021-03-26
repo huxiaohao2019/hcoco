@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "hcoco": {
+      "projectType": "library",
+      "root": "projects/hcoco",
+      "sourceRoot": "projects/hcoco/src",
+      "prefix": "co",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/hcoco/tsconfig.lib.json",
+            "project": "projects/hcoco/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hcoco/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hcoco/src/test.ts",
+            "tsConfig": "projects/hcoco/tsconfig.spec.json",
+            "karmaConfig": "projects/hcoco/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/hcoco/tsconfig.lib.json",
+              "projects/hcoco/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "hcoco"
 }
