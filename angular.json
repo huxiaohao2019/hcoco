@@ -68,7 +68,8 @@
               "projects/hcoco-demo01/src/assets"
             ],
             "styles": [
-              "projects/hcoco-demo01/src/styles.scss"
+              "projects/hcoco-demo01/src/styles.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": []
           },
@@ -131,7 +132,8 @@
               "projects/hcoco-demo01/src/assets"
             ],
             "styles": [
-              "projects/hcoco-demo01/src/styles.scss"
+              "projects/hcoco-demo01/src/styles.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": []
           }
