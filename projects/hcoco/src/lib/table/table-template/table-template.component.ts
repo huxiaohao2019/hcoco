@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'co-table-template',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-template.component.css']
 })
 export class TableTemplateComponent implements OnInit {
-
+  @Input() title = '';
   constructor() { }
 
   ngOnInit(): void {
