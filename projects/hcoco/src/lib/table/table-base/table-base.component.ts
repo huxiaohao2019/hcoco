@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableBaseComponent implements OnInit {
   title = '用户表'
+  dataList!:any[];
   constructor() { }
 
   ngOnInit(): void {

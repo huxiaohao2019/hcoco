@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TableTemplateComponent implements OnInit {
   @Input() title = '';
+  @Input() dataList: any[] = [];
   constructor() { }
 
   ngOnInit(): void { }
