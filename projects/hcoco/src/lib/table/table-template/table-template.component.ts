@@ -9,7 +9,5 @@ export class TableTemplateComponent implements OnInit {
   @Input() title = '';
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }
